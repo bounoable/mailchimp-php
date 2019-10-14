@@ -1,0 +1,21 @@
+{
+    "name": "bounoable/mailchimp-php",
+    "description": "Mailchimp API client for PHP.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Saman Hosseini",
+            "email": "bounoable@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Bounoable\\Mailchimp\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
