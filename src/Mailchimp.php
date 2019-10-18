@@ -45,7 +45,8 @@ class Mailchimp
         }
 
         return json_decode(
-            $this->client->request($method, trim($endpoint, '/'), $options)->getBody()->getContents()
+            $this->client->request($method, trim($endpoint, '/'), $options)->getBody()->getContents(),
+            true
         );
     }
 
