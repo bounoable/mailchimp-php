@@ -22,6 +22,7 @@ class ListMembers
 
     public function create(string $email, string $status, array $mergeFields = [], array $body = [], array $query = []): array
     {
+        $email = mb_strtolower($email);
         $emailHash = md5($email);
 
         return $this->mailchimp->sendRequest('PUT', "lists/{$this->listId}/members/{$emailHash}", array_merge([
